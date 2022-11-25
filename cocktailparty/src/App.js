@@ -1,14 +1,13 @@
-
+import SearchBar from './components/search/search';
 import './App.css';
 
 function App() {
   return (
     <div>
-      <div className="Header"></div>
-      <div className="Search">
-     <Search />
-      </div>
       
+     <SearchBar />
+    
+       
     </div>
   );
 }
