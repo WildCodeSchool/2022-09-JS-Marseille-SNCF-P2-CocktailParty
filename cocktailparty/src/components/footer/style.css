@@ -1,0 +1,19 @@
+.footer{
+    width: 100vw;
+    height: 10vh;
+    box-shadow: -10px -7px 27px 1px #A62424,inset 0px -3px 15px 3px #0A0D40;
+    border-radius: 5px;
+    color: white;
+    margin-top: 85vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    width: 50px;
+    height: 50px;
+    padding: 0.5rem;
+}
+.footer p{
+    padding: 0.5rem;
+}

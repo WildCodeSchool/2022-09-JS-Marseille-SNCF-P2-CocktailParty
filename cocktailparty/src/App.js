@@ -3,6 +3,7 @@ import './App.css';
 import Cocktail from './components/Cocktail/Cocktail';
 import axios from 'axios';
 import React, { useState } from 'react';
+import Footer from './components/footer/Footer';
 
 
 const firstDrink = {
@@ -29,7 +30,9 @@ function App() {
       
   };
   return (
-    <div>
+    <div className='App'>
+      
+
       
      <SearchBar />
 
@@ -39,6 +42,9 @@ function App() {
         strIngredient1={drink.strIngredient1}
         getDrink={getDrink}
       /> 
+
+      <Footer/>
+
     </div>
   );
 }
