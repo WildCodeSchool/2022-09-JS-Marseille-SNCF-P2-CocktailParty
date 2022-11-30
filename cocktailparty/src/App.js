@@ -29,6 +29,9 @@ function App() {
       
   };
   return (
+    
+
+    
     <div>
       
      <SearchBar />

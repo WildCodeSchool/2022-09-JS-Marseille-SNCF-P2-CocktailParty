@@ -1,24 +1,23 @@
+import "./style.css";
 
-import './style.css';
+
 
 const SearchBar = () => (
-    <form action="/" method="get">
-        <label htmlFor="header-search">
-            <span className="visually-hidden">Search blog posts</span>
-        </label>
-        <input
-            type="text"  
-            id="header-search"
-            placeholder="Search blog posts"
-            name="s" 
-        />
-        <button type="submit">Search</button>
-
-       
+  <div className="searchbar">
+    <form className="form">
+      <input
+        className="enter"
+        type="text"
+        id="header-search"
+        placeholder="Votre cocktail ou ingrédient.."
+        name="searchBar"
+      />
+      <button className="btn" type="submit">
+        Recherche
+      </button>
     </form>
+  </div>
 );
 //
 
 export default SearchBar;
-
-
