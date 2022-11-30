@@ -1,6 +1,10 @@
 
 
-
+/* #A62139
+#401033
+#0D040A
+#0A0D40
+#A62424 */
 
 
 
@@ -9,5 +13,10 @@ body{
     text-align: center;
     background-image: url(./images/night-sunset.jpg);
     background-size: 100vw 100vh;
+}
 
+.cocktail-grid{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
