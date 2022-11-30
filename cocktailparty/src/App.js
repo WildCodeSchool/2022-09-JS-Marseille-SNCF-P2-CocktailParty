@@ -1,8 +1,10 @@
+import Header from './components/header/Header';
 import SearchBar from './components/search/Search';
 import './App.css';
 import Cocktail from './components/Cocktail/Cocktail';
 import axios from 'axios';
 import React, { useState } from 'react';
+
 
 
 const firstDrink = {
@@ -30,7 +32,8 @@ function App() {
   };
   return (
     <div>
-      
+      <Header /> 
+
      <SearchBar />
 
      <Cocktail
