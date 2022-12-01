@@ -1,3 +1,4 @@
+import Header from './components/header/Header';
 import SearchBar from "./components/search/Search";
 import "./App.css";
 import Cocktail from "./components/Cocktail/Cocktail";
@@ -5,6 +6,7 @@ import axios from "axios";
 import React, { useState } from "react";
 import Footer from "./components/footer/Footer";
 import CocktailList from "./components/CocktailList/CocktailList";
+
 
 const firstDrink = {
   strDrink: "name",
@@ -27,7 +29,8 @@ function App() {
       });
   };
   return (
-    <div className="App">
+     <div className="App">
+    <Header /> 
       <SearchBar />
 
       <Cocktail
