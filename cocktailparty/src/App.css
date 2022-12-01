@@ -11,12 +11,20 @@
 
 body{
     text-align: center;
-    background-image: url(./images/night-sunset.jpg);
+    background-image: url(./images/picture1.jpg);
+    /* background-image: linear-gradient(to right, #070D41, #842219); */
     background-size: 100vw 100vh;
+    background-attachment: fixed;
 }
 
 .cocktail-grid{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+}
+
+.cocktailCard{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
