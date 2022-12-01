@@ -4,8 +4,7 @@ function Cocktail(props) {
  
   return (
   
-    <div className="App">
-     
+    <div>
      <>
       <button type="button" onClick={props.getDrink}>Get your cocktail</button>
       </>

@@ -1,11 +1,7 @@
 import "./style.css";
 
-
-
-
 const SearchBar = () => (
   <div className="searchbar">
-    
     <form className="form">
       <input
         className="enter"
@@ -23,6 +19,5 @@ const SearchBar = () => (
     </button>
   </div>
 );
-
 
 export default SearchBar;
