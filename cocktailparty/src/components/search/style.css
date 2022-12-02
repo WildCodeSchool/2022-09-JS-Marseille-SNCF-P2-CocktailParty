@@ -6,7 +6,7 @@
     justify-content: center;
     align-items: center;
     margin: auto;
-    
+
 }
 
 .form {
@@ -27,11 +27,27 @@
     font-size: 1rem;
     background-color: transparent;
     border: none;
+    border-radius: 40px 0px 0px 40px;
 
 }
 
-.enter:hover {
+input:focus {
+    border: none;
+    outline: none;
+}
+
+
+.form:hover {
     background-image: linear-gradient(to right, rgb(243, 236, 243), rgb(55, 101, 138));
+
+
+}
+
+::placeholder {
+    font-style: italic;
+    font-size: larger;
+    font-weight: 600;
+
 }
 
 .loop {
@@ -54,10 +70,4 @@
 
 .btn:hover {
     background-image: linear-gradient(to right, rgb(243, 236, 243), rgb(55, 101, 138));
-}
-
-::placeholder {
-    font-style: italic;
-    font-size: larger;
-    font-weight: 600;
 }

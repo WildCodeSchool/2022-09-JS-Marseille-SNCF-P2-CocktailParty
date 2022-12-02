@@ -10,9 +10,11 @@ const SearchBar = () => (
         placeholder="Votre cocktail ou ingrédient.."
         name="q"
       />
-      <div className="loop">
-        <i class="fa-solid fa-magnifying-glass"></i>
-      </div>
+      {
+        <div className="loop">
+          <i className="fa-solid fa-magnifying-glass"></i>
+        </div>
+      }
     </form>
     <button className="btn" type="submit">
       Recherche
