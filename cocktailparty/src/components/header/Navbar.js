@@ -1,38 +1,46 @@
 import React, { useState } from "react";
-import './navbar.css';
+import * as FaIcons from "react-icons/fa";
+import * as AiIcons from "react-icons/ai";
+import { Link } from "react-router-dom";
+import { SidebarData } from "./SidebarData";
+import "./navbar.css";
+import { IconContext } from "react-icons";
 
-const Navbar = () => {
+function Navbar() {
+const [sidebar, setSidebar] = useState(false);
 
-// Pour changer la classe burger
-const [burger_class, setBurgerClass] = useState("burger-bar unclicked")
-const [menu_class, setMenuClass] = useState("menu hidden")
-const [isMenuClicked, setIsMenuClicked] = useState(false)
-
-// Toggle burger menu change
-const updateMenu = () => {
-    if(!isMenuClicked) {
-        setBurgerClass("burger-bar clicked")
-        setMenuClass("menu visible")
-    }
-    else {
-        setBurgerClass("burger-bar unclicked")
-        setMenuClass("menu hidden")
-    }
-    setIsMenuClicked(!isMenuClicked)
-}
+const showSidebar = () => setSidebar(!sidebar);
 
   return (
-    <div style={{ width: "100%", height: "100vh" }}>
-      <nav>
-        <div className="burger-menu" onClick={updateMenu}>
-            <div className={burger_class}></div>
-            <div className={burger_class}></div>
-            <div className={burger_class}></div>
+    <>
+      <IconContext.Provider value={{ color: "undefined" }}>
+        <div className="navbar">
+          <Link to="#" className="menu-bars">
+            <FaIcons.FaBars onClick={showSidebar} />
+          </Link>
         </div>
-      </nav>
-      <div className={menu_class}></div>
-    </div>
+        <nav className={sidebar ? "nav-menu active" : "nav-menu"}>
+          <ul className="nav-menu-items" onClick={showSidebar}>
+            <li className="navbar-toggle">
+              <Link to="#" className="menu-bars">
+                <AiIcons.AiOutlineClose />
+              </Link>
+            </li>
+            {SidebarData.map((item, index) => {
+              return (
+                <li key={index} className={item.cName}>
+                  <Link to={item.path}>
+                    {item.icon}
+                    <span>{item.title}</span>
+                  </Link>
+                </li>
+              );
+            })}
+          </ul>
+        </nav>
+      </IconContext.Provider>
+    </>
   );
-};
+}
 
 export default Navbar;

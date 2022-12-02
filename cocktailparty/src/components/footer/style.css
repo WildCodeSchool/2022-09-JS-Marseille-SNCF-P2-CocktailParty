@@ -1,7 +1,7 @@
 .footer{
     width: 100vw;
     height: 10vh;
-    box-shadow: -10px -7px 27px 1px #A62424,inset 0px -3px 15px 3px #0A0D40;
+    box-shadow: 1px -6px 10px -3px #A62424,inset 0px -3px 15px 3px #0A0D40;
     border-radius: 5px;
     color: white;
     margin-top: 10rem;
