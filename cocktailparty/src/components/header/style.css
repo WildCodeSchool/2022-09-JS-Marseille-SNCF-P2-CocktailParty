@@ -1,9 +1,9 @@
-.container{
+/* .container{
    width: 99vw;
    margin-left: auto;
    margin-right: auto;
    margin-top: 1vh;
-}
+} */
 .header {
   display: flex;
   align-items: center;
@@ -11,11 +11,19 @@
   border: 1px solid black;
   border-radius: 5px;
   height: 18vh;
-  box-shadow: -10px -7px 27px 1px #0A0D40 ,inset 0px -3px 15px 3px #A62424;
+  box-shadow: -10px -7px 27px 1px #0a0d40, inset 0px -3px 15px 3px #a62424;
   margin-bottom: 2vh;
-  padding-right: 2vw;
+  width: 98vw;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1vh;
 }
-.logo {
+
+.logo1 {
   height: 20vh;
 }
 
+h1 {
+  color: white;
+  font-size: 5vw;
+}
