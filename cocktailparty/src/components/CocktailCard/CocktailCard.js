@@ -5,19 +5,19 @@ import logo from "../../images/logo-api.png";
 const CocktailCard = () => {
   return (
     <article className="cocktailcard">
-      <div className="image">
+      <div className="img-container">
         {/* strImageSource */}
-        <img src={logo} />
+        <img src={logo} alt="" />
       </div>
       <div className="cocktail-footer">
         {/* strDrink */}
         <h3>margarita</h3>
         {/* strGlass */}
-        <h4>verres</h4>
+        <h4>Cocktail glass</h4>
         {/* strIBA */}
-        <p>info</p>
-        {/* strIngredient  */}
-        <p>ingredient</p>
+        <p>Contemporary Classics</p>
+        {/* strIngredient1  strIngredient2 strIngredient3 strIngredient4 */}
+        <p>Tequila, Triple sec, Lime juice, Salt</p>
         {/* strInstructions */}
         <h3>recette</h3>
         <p>

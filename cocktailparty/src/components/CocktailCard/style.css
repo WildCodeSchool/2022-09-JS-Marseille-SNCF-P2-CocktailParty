@@ -1,10 +1,12 @@
 .cocktailcard {
   box-shadow: 0px -2px 10px -2px #a62424, 0px 10px 13px -7px #a62424,
     inset 0px -3px 15px 3px #0a0d40;
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
   border-radius: 5px;
   width: 60vw;
+  min-height: 20vw;
   background-image: linear-gradient(
     to right,
     rgb(213, 118, 213),
@@ -12,8 +14,17 @@
   );
   color: white;
   margin-top: 5rem;
+  overflow: hidden;
 }
 
+.cocktail img {
+  object-fit: cover;
+}
+
+.cocktailcard img{
+  width: 70%;
+  padding-top: 2rem;
+}
 .cocktail-footer {
   padding: 1.5rem;
 }
