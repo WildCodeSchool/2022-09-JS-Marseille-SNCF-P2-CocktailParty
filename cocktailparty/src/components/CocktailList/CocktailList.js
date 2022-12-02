@@ -6,7 +6,7 @@ const CocktailList = () => {
   return (
     <article className="cocktail">
       <div className="img-container">
-        <img src={logo} />
+        <img src={logo} alt=''/>
       </div>
       <div className="cocktail-footer">
         {/* strDrink */}
