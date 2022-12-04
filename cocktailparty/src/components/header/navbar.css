@@ -30,7 +30,7 @@
 }
 
 .menu-bars {
-  margin-left: 2rem;
+  margin-right: 2rem;
   font-size: 3rem;
   background: none;
   color: #A62139;
@@ -45,12 +45,12 @@
   justify-content: center;
   position: fixed;
   top: 0;
-  left: -100%;
+  right: -100%;
   transition: 850ms;
 }
 
 .nav-menu.active {
-  left: 0;
+  right: 0;
   transition: 450ms;
 }
 
