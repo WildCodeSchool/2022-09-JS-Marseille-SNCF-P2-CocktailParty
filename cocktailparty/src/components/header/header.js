@@ -6,14 +6,14 @@ import Navbar from "./Navbar";
 const header = () => {
   return (
     <div className="header">
-      <div className="nav-header">
-      <Navbar />
+      <div className="logo1">
+        <img className="logo1" src={logo1} alt="logo react" />
       </div>
       <div>
         <h1>Cocktail Party</h1>
       </div>
-      <div className="logo1">
-        <img className="logo1" src={logo1} alt="logo react" />
+      <div className="nav-header">
+        <Navbar />
       </div>
     </div>
   );
