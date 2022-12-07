@@ -28,21 +28,22 @@ import Cocktail from "../Cocktail/Cocktail";
 // export default SearchBar;
 
 function SearchBar(props) {
-  const [drink, setDrink] = useState(false);
- const handleSearch = () => {
-   setDrink(!drink);
- };
-  useEffect(() => {
-    axios
-      .get("https://www.thecocktaildb.com/api/json/v1/1/search.php?s=margarita")
-      // Extract the DATA from the received response
-      .then((response) => response.data)
-      // Use this data to update the state
-      .then((data) => {
-        console.log(data);
-        setDrink(data.results[0]);
-      });
-  });
+//   const [drink, setDrink] = useState(false);
+//  const handleSearch = () => {
+//    setDrink(!drink);
+//  };
+//   useEffect(() => {
+//     axios
+//       .get("https://www.thecocktaildb.com/api/json/v1/1/search.php?s=margarita")
+//       // Extract the DATA from the received response
+//       .then((response) => response.data)
+//       // Use this data to update the state
+//       .then((data) => {
+        
+//         setDrink(data.results[0]);
+//         console.log(data);
+//       });
+//   });
 
   
   return (
@@ -61,7 +62,7 @@ function SearchBar(props) {
           </div>
         }
       </form>
-      <button className="btn" type="submit" onClick={handleSearch}>
+      <button className="btn" type="submit" onClick={props.getDrink}>
         Recherche 
       </button>
     </div>
