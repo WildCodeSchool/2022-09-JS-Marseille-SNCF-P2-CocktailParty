@@ -4,7 +4,8 @@
   display: grid;
   grid-template-rows: auto 1fr;
   border-radius: 5px;
-  width: 25vw;
+  width: 30vw;
+  min-width: 20vw;
   background-image: linear-gradient(
     to bottom,
     rgb(213, 118, 213),
@@ -34,8 +35,9 @@
   background-color: #0a0d40;
   color: white;
   border-radius: 5px;
-  padding: 0.5rem;
+  padding: 1rem 2rem;
   text-align: center;
+  border-style: none;
 }
 .button:hover {
   cursor: pointer;

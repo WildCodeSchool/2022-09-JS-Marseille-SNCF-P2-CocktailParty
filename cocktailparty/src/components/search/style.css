@@ -16,7 +16,7 @@
     display: flex;
     align-items: center;
     border: 5px solid rgb(34, 14, 100);
-    border-style: double;
+    border-style: none;
     border-radius: 40px;
     box-shadow: 0px -2px 10px -2px #a62424, 0px 10px 13px -7px #a62424;
     background-image: linear-gradient(to right, rgb(243, 236, 243), rgb(106, 164, 211));
@@ -62,7 +62,7 @@ input:focus {
     border: 5px solid rgb(34, 14, 100);
     box-shadow: 0px -2px 10px -2px #a62424, 0px 10px 13px -7px #a62424;
     border-radius: 30px;
-    border-style: double;
+    border-style: none;
     width: 30vh;
     padding: 3vh;
     margin-top: 3%;
