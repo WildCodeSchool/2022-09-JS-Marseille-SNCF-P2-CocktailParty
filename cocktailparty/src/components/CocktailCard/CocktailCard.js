@@ -10,10 +10,7 @@ function CocktailCard({
   ingredient3,
   ingredient4,
   info,
-  recette,
-  mesure1,
-  mesure2,
-  mesure3,
+  recette
 }) {
   console.log(name, "le name");
 
@@ -30,11 +27,9 @@ function CocktailCard({
           <span>{ingredient}</span> <span>{ingredient2}</span>
           <span>{ingredient3}</span> <span>{ingredient4}</span>
         </p>
-        <h3>recette</h3>
+        <h3>Instructions</h3>
         <p>{recette}</p>
-        <p>
-          <span>{mesure1}</span> <span>{mesure2}</span> <span>{mesure3}</span>
-        </p>
+       
       </div>
     </article>
   );

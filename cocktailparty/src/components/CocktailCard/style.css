@@ -17,9 +17,7 @@
   overflow: hidden;
 }
 
-.cocktail img {
-  object-fit: cover;
-}
+
 
 .cocktailcard img{
   width: 100%;

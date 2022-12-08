@@ -26,10 +26,6 @@ const drinksInitial = [
     strIngredient5: null,
     strInstructions:
       "Rub the rim of the glass with the lime slice to make the salt stick to it. Take care to moisten only the outer rim and sprinkle the salt on it. The salt should present to the lips of the imbiber and never mix into the cocktail. Shake the other ingredients with ice, then carefully pour into the glass.",
-
-    strMeasure1: "1 1/2 oz ",
-    strMeasure2: "1/2 oz ",
-    strMeasure3: "1 oz ",
   },
 ];
 
@@ -85,9 +81,6 @@ function App() {
             ingredient3={drink.strIngredient3}
             ingredient4={drink.strIngredient4}
             recette={drink.strInstructions}
-            mesure1={drink.strMeasure1}
-            mesure2={drink.strMeasure2}
-            mesure3={drink.mesure3}
           />
         ))}
       </div>
