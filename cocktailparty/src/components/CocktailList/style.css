@@ -12,7 +12,9 @@
     rgb(38, 24, 195)
   );
   color: white;
-  margin-top: 5rem;
+  margin: 1rem;
+margin-top: 5rem;
+
 }
 
 .cocktaillist img{
@@ -28,6 +30,7 @@
 .cocktail-footer p {
   margin-bottom: 0.3rem;
   font-size: 1vw;
+  font-family: 'Courgette', cursive;
 }
 .cocktail-footer p {
   margin-bottom: 0.5rem;
