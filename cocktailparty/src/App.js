@@ -56,10 +56,12 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <SearchBar />
-      <button type="button" onClick={getDrink}>
-        Get your cocktail
-      </button>
+      <div className="search">
+        <SearchBar />
+        <button className="btn" type="button" onClick={getDrink}>
+          Recherche
+        </button>
+      </div>
       <Cocktail />
 
       <div className="cocktail-grid">

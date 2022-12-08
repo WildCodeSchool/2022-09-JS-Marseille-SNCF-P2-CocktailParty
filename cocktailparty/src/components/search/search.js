@@ -62,9 +62,9 @@ function SearchBar(props) {
           </div>
         }
       </form>
-      <button className="btn" type="submit" onClick={props.getDrink}>
+      {/* <button className="btn" type="submit" onClick={props.getDrink}>
         Recherche 
-      </button>
+      </button> */}
     </div>
   );
 }
