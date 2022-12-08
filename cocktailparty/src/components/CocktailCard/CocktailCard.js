@@ -31,7 +31,6 @@ function CocktailCard({
         <h3>Instructions</h3>
         <p>{recette}</p>
         <p>{video}</p>
-      
       </div>
     </article>
   );

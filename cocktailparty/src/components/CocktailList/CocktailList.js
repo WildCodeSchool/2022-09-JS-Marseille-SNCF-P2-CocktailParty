@@ -1,6 +1,6 @@
 import React from "react";
 import "./style.css";
-import logo from "../../images/logo-api.png";
+
 
 const CocktailList = ({ name, picture }) => {
   return (
@@ -10,7 +10,6 @@ const CocktailList = ({ name, picture }) => {
       </div>
       <div className="cocktail-footer">
         <h3>{name}</h3>
-
         <button className="button">DETAILS</button>
       </div>
     </div>

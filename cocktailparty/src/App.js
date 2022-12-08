@@ -91,19 +91,4 @@ function App() {
     </div>
   );
 }
-
-{
-  /* <div id="container">
-        {contactInfo.map((potatoes, index) => (
-<Contact
-key={index}
-name={potatoes.name}
-email={potatoes.email}
-phone={potatoes.phone}
-isDeletable={potatoes.isDeletable}
-/>
-        )        
-        )}
-      </div> */
-}
 export default App;
