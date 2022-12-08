@@ -13,19 +13,29 @@
 .logo{
     width: 100px;
     height: 100px;
-    padding: 0.5rem;
+    padding: 1rem;
 }
-.footer h4{
-    padding: 0.5rem;
-    
-}
+
 .textfooter{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    padding: 1rem;
+    font-family: 'Courgette', cursive;
 }
 
 .lien-footer{
     display: flex;
     flex-direction: row;
+    padding-right: 1rem;
+}
+
+.lien-footer a{
+    font-family: 'Courgette', cursive;
+    text-decoration: none;
+}
+
+.logo-flex{
+    display: flex;
+    flex-direction: column;
 }
