@@ -60,7 +60,7 @@ function App() {
       </div>
       <Cocktail />
 
-      <div className="cocktail-grid">
+      <div className="cocktail-list">
         {drinkState.map((drink, index) => (
           <CocktailList
             key={index}

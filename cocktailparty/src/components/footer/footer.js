@@ -8,8 +8,9 @@ const Footer = () => {
   return (
     <div className="footer">
       <div className="textfooter">
+      <h4>Crée par Nelly, Sandra, Geoffroy</h4>
         <h4>L'abus d'alcool est dangeureux pour la santé!</h4>
-        <p>Crée par Nelly, Sandra, Geoffroy</p>
+        
       </div>
       <div className="lien-footer">
         <div>
