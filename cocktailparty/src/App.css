@@ -1,24 +1,9 @@
-/* #A62139
-#401033
-#0D040A
-#0A0D40
-#A62424 */
-
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Fraunces:opsz,wght@9..144,700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Hind&display=swap');
-
-* {
-    font-family: 'Hind', sans-serif;
-}
 
 body {
     text-align: center;
     background-image: url(./images/night-sunset.jpg);
-    /* background-image: linear-gradient(to right, #070D41, #842219); */
     background-size: 100vw 100vh;
-
     background-attachment: fixed;
-
 }
 
 .cocktail-grid {
@@ -55,3 +40,4 @@ body {
 .btn:hover {
     background-image: linear-gradient(to right, rgb(243, 236, 243), rgb(55, 101, 138));
 }
+

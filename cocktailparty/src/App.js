@@ -65,23 +65,31 @@ function App() {
       <Cocktail />
 
       <div className="cocktail-grid">
-        <CocktailList />
-        <CocktailList />
-        <CocktailList />
+        {drinkState.map((drink, index) => (
+          <CocktailList
+            key={index}
+            name={drink.strDrink}
+            picture={drink.strDrinkThumb}
+          />
+        ))}
       </div>
       <div className="cocktailCard">
-        {drinkState
-          // .filter((item) => item.name)
-          .map((drink, index) => (
-            <CocktailCard
-              key={index}
-              name={drink.strDrink}
-              glass={drink.strGlass}
-              picture={drink.strDrinkThumb}
-              ingredient={drink.strIngredient1}
-              recette={drink.strInstructions}
-            />
-          ))}
+        {drinkState.map((drink, index) => (
+          <CocktailCard
+            key={index}
+            name={drink.strDrink}
+            glass={drink.strGlass}
+            picture={drink.strDrinkThumb}
+            ingredient={drink.strIngredient1}
+            ingredient2={drink.strIngredient2}
+            ingredient3={drink.strIngredient3}
+            ingredient4={drink.strIngredient4}
+            recette={drink.strInstructions}
+            mesure1={drink.strMeasure1}
+            mesure2={drink.strMeasure2}
+            mesure3={drink.mesure3}
+          />
+        ))}
       </div>
       <Footer />
     </div>
