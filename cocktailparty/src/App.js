@@ -24,9 +24,11 @@ const drinksInitial = [
     strIngredient3: "Lime juice",
     strIngredient4: "Salt",
     strIngredient5: null,
+    strVideo: null,
     strInstructions:
       "Rub the rim of the glass with the lime slice to make the salt stick to it. Take care to moisten only the outer rim and sprinkle the salt on it. The salt should present to the lips of the imbiber and never mix into the cocktail. Shake the other ingredients with ice, then carefully pour into the glass.",
   },
+  
 ];
 
 function App() {
@@ -34,7 +36,7 @@ function App() {
 
   const getDrink = () => {
     axios
-      .get("https://www.thecocktaildb.com/api/json/v1/1/search.php?s=negroni")
+      .get("https://www.thecocktaildb.com/api/json/v1/1/search.php?s=margarita")
 
       .then((response) => response.data)
 
@@ -81,6 +83,7 @@ function App() {
             ingredient3={drink.strIngredient3}
             ingredient4={drink.strIngredient4}
             recette={drink.strInstructions}
+            video={drink.strVideo}
           />
         ))}
       </div>

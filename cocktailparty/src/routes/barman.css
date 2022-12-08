@@ -1,8 +1,7 @@
-
-.flex{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .barman-container {
@@ -23,17 +22,16 @@
   overflow: hidden;
 }
 
-.imagebarman{
+.imagebarman {
   width: 100%;
   height: 100%;
 }
 
 .barmanfooter h2,
 .barmanfooter h3,
-.barmanfooter p{
-    margin-top: 2vw;
-    font-size: 2vw;
-    text-decoration: none;
-  
+.barmanfooter p {
+  margin-top: 2vw;
+  font-size: 2vw;
+  text-decoration: none;
+  font-family: sans-serif;
 }
-

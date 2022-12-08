@@ -10,7 +10,8 @@ function CocktailCard({
   ingredient3,
   ingredient4,
   info,
-  recette
+  recette,
+  video
 }) {
   console.log(name, "le name");
 
@@ -29,7 +30,8 @@ function CocktailCard({
         </p>
         <h3>Instructions</h3>
         <p>{recette}</p>
-       
+        <p>{video}</p>
+      
       </div>
     </article>
   );
