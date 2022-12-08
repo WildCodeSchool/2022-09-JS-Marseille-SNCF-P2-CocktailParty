@@ -1,10 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Lato&display=swap"); */
 
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: "Lato", sans-serif;
 }
 
 .home,
@@ -93,6 +92,7 @@
   align-items: center;
 }
 
-span {
+.nav-text span {
   margin-left: 16px;
+  font-size: 1.5rem;
 }

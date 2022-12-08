@@ -24,8 +24,12 @@ function Verre() {
           lequel ils sont servis... Voici quelques exemples incontournables!
         </p>
       </div>
+
       <div className="tumbler">
-        <section>
+        <div className="tumblerPicture">
+          <img className="imgVerre1" src={image1} alt="Verre tumbler" />
+        </div>
+        <div className="texteVerre">
           <h3>Le tumbler</h3>
           <p>
             Le tumbler est le verre le plus utilisé pour servir des cocktails.
@@ -33,11 +37,14 @@ function Verre() {
             beaucoup de glaçons dans une boisson. Il est idéal pour servir des
             Mojito.
           </p>
-        </section>
-        <img className="imgVerre1" src={image1} alt="Verre tumbler" />
+        </div>
       </div>
+
       <div className="margarita">
-        <section>
+        <div className="margaritaPicture">
+          <img className="imgVerre2" src={image2} alt="Verre à Margarita" />
+        </div>
+        <div className="texteVerre">
           <h3>Le verre à Margarita</h3>
           <p>
             Les margaritas sont traditionnellement servies dans une variante du
@@ -46,22 +53,28 @@ function Verre() {
             boissons au frais, et leur contour est facilement "glaçable" (avec
             un peu de sel, du sucre...).
           </p>
-        </section>
-        <img className="imgVerre2" src={image2} alt="Verre à Margarita" />
+        </div>
       </div>
+
       <div className="verreBallon">
-        <section>
+        <div className="ballonPicture">
+          <img className="imgVerre3" src={image3} alt="Verre ballon" />
+        </div>
+        <div className="texteVerre">
           <h3>Le verre ballon</h3>
           <p>
             Ce verre à pied relativement large est parfait pour les boissons à
             base de fruits et servi avec des glaçons. On l'utilise pour verser
             une sangria, une Piña Colada, un spritz...
           </p>
-        </section>
-        <img className="imgVerre3" src={image3} alt="Verre ballon" />
+        </div>
       </div>
+
       <div className="flute">
-        <section>
+        <div className="flutePicture">
+          <img className="imgVerre4" src={image4} alt="Verre flute" />
+        </div>
+        <div className="texteVerre">
           <h3>La flute</h3>
           <p>
             Son design allongé permet de préserver les bulles et la finesse de
@@ -69,23 +82,28 @@ function Verre() {
             la flute peut également servir à présenter des cocktails à base de
             pétillants (tel du Prosecco).
           </p>
-        </section>
-        <img className="imgVerre4" src={image4} alt="Verre flute" />
+        </div>
       </div>
+
       <div className="tulipeHurricane">
-        <section>
+        <div className="hurricanePicture">
+          <img
+            className="imgVerre5"
+            src={image5}
+            alt="Verre tulipe hurricane"
+          />
+        </div>
+        <div className="texteVerre">
           <h3>Le tulipe Hurricane</h3>
           <p>
             Le nom de ce verre fait référence aux lampes vintage du même nom
             (les lampes Hurricane) et à sa forme particulière qui ressemble à
             une Tulipe. Ce verre est utilisé pour servir des long drinks glacés
-            et souvent très colorés. On le retrouve souvent dans des bars de
-            plage, car sa forme lui donne un air vacancier et moins stricte que
-            les lignes droites du tumbler.
+            et souvent très colorés.
           </p>
-        </section>
-        <img className="imgVerre5" src={image5} alt="Verre tulipe hurricane" />
+        </div>
       </div>
+
       <Footer />
     </div>
   );

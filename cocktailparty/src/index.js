@@ -20,7 +20,7 @@ import {
   Outlet
 } from "react-router-dom";
 import App from "./App";
-import Navbar from "./components/header/Navbar";
+// import Navbar from "./components/header/Navbar";
 import Barman from "./routes/Barman";
 import Conseils from "./routes/Conseils";
 import Materiel from "./routes/Materiel";
