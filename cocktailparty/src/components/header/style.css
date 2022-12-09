@@ -23,10 +23,8 @@
   height: 20vh;
 }
 
-h1 {
+.header h1 {
   color: white;
   font-size: 5vw;
-
   font-family: "Alex Brush";
-
 }
