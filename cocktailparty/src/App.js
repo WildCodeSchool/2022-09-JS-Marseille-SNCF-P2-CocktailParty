@@ -24,13 +24,11 @@ const drinksInitial = [
     strIngredient3: "Lime juice",
     strIngredient4: "Salt",
     strIngredient5: null,
+    strVideo: null,
     strInstructions:
       "Rub the rim of the glass with the lime slice to make the salt stick to it. Take care to moisten only the outer rim and sprinkle the salt on it. The salt should present to the lips of the imbiber and never mix into the cocktail. Shake the other ingredients with ice, then carefully pour into the glass.",
-
-    strMeasure1: "1 1/2 oz ",
-    strMeasure2: "1/2 oz ",
-    strMeasure3: "1 oz ",
   },
+  
 ];
 
 function App() {
@@ -38,7 +36,7 @@ function App() {
 
   const getDrink = () => {
     axios
-      .get("https://www.thecocktaildb.com/api/json/v1/1/search.php?s=negroni")
+      .get("https://www.thecocktaildb.com/api/json/v1/1/search.php?s=margarita")
 
       .then((response) => response.data)
 
@@ -64,42 +62,33 @@ function App() {
       </div>
       <Cocktail />
 
-      <div className="cocktail-grid">
-        <CocktailList />
-        <CocktailList />
-        <CocktailList />
+      <div className="cocktail-list">
+        {drinkState.map((drink, index) => (
+          <CocktailList
+            key={index}
+            name={drink.strDrink}
+            picture={drink.strDrinkThumb}
+          />
+        ))}
       </div>
       <div className="cocktailCard">
-        {drinkState
-          // .filter((item) => item.name)
-          .map((drink, index) => (
-            <CocktailCard
-              key={index}
-              name={drink.strDrink}
-              glass={drink.strGlass}
-              picture={drink.strDrinkThumb}
-              ingredient={drink.strIngredient1}
-              recette={drink.strInstructions}
-            />
-          ))}
+        {drinkState.map((drink, index) => (
+          <CocktailCard
+            key={index}
+            name={drink.strDrink}
+            glass={drink.strGlass}
+            picture={drink.strDrinkThumb}
+            ingredient={drink.strIngredient1}
+            ingredient2={drink.strIngredient2}
+            ingredient3={drink.strIngredient3}
+            ingredient4={drink.strIngredient4}
+            recette={drink.strInstructions}
+            video={drink.strVideo}
+          />
+        ))}
       </div>
       <Footer />
     </div>
   );
-}
-
-{
-  /* <div id="container">
-        {contactInfo.map((potatoes, index) => (
-<Contact
-key={index}
-name={potatoes.name}
-email={potatoes.email}
-phone={potatoes.phone}
-isDeletable={potatoes.isDeletable}
-/>
-        )        
-        )}
-      </div> */
 }
 export default App;
