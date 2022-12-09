@@ -1,6 +1,6 @@
 import React from "react";
 import "./style.css";
-import logo1 from "../../images/cocktail-logo.png";
+import logo1 from "../../images/logos/cocktail-logo.png";
 import Navbar from "./Navbar";
 
 const header = () => {

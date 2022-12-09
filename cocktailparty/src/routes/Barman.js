@@ -1,6 +1,6 @@
 import React from "react";
 import Header from "../components/header/Header";
-import image from "../images/barman.jpg";
+import image from "../images/barman-img/barman.jpg";
 import "./barman.css";
 import Footer from "../components/footer/Footer";
 
