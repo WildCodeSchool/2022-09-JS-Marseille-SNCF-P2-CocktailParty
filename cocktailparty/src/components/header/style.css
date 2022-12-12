@@ -1,9 +1,4 @@
-/* .container{
-   width: 99vw;
-   margin-left: auto;
-   margin-right: auto;
-   margin-top: 1vh;
-} */
+
 .header {
   display: flex;
   align-items: center;
@@ -23,10 +18,8 @@
   height: 20vh;
 }
 
-h1 {
+.header h1 {
   color: white;
   font-size: 5vw;
-
   font-family: "Alex Brush";
-
 }

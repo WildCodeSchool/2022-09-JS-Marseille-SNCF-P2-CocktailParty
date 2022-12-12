@@ -8,17 +8,42 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    font-size: 0.8em;
 }
 .logo{
+
     width: 130px;
     height: 130px;
     padding: 1rem;
 }
 .footer h4{
+
+    width: 90px;
+    height: 90px;
+
     padding: 1rem;
 }
+
 .textfooter{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    padding: 1rem;
+    font-family: 'Courgette', cursive;
+}
+
+.lien-footer{
+    display: flex;
+    flex-direction: row;
+    padding-right: 1rem;
+}
+
+.lien-footer a{
+    font-family: 'Courgette', cursive;
+    text-decoration: none;
+}
+
+.logo-flex{
+    display: flex;
+    flex-direction: column;
 }

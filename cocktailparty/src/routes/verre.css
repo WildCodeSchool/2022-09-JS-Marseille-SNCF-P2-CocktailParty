@@ -1,49 +1,39 @@
-.Verre h2,
-p,
-h3 {
-  color: white;
+.Verre, .Verre h2{
+  color: white
 }
 
-p{
-    padding-right: 1rem;
+.Verre h2{
+  text-shadow: 5px 2px 1px #A62424;
 }
 
-.imgVerre1,
-.imgVerre2,
-.imgVerre3,
-.imgVerre4,
-.imgVerre5 {
-  height: 20vh;
-
+.Verre h3{
+  font-size: 2.5rem;
+  text-shadow: 5px 2px 1px #A62424;
 }
 
-.tumbler,
-.margarita,
-.verreBallon,
-.flute,
-.tulipeHurricane {
+.imgVerre1, .imgVerre2, .imgVerre3, .imgVerre4, .imgVerre5{
+  width: 35vw;
+  border-radius: 25% 10%;
+}
+
+.tumbler, .verreBallon, .tulipeHurricane{
   display: flex;
-  box-shadow: 0px -2px 10px -2px #a62424, 0px 10px 13px -7px #a62424;
-  /* display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 1fr; */
-  border-radius: 5px;
-  width: 70vw;
-  margin-top: 3vw;
-  padding-left: 1rem;
-  /* min-height: 20vw; */
-  background-image: linear-gradient(
-    to right,
-    rgb(213, 118, 213),
-    rgb(38, 24, 195)
-  );
-  /* color: white;  */
-
-  /* overflow: hidden;  */
+  flex-direction: row-reverse;
+  margin-top: 1.7rem;
 }
 
-.tumbler,
-.verreBallon,
-.tulipeHurricane {
-    margin-left:30%;
+.margarita, .flute{
+  display: flex;
+  margin-top: 1.7rem;
+  box-shadow: 0px 10px 13px -7px #0A0D40, 1px 7px 20px -7px #0A0D40;
 }
+
+.tumbler, .verreBallon, .intro{
+  box-shadow: 0px 10px 13px -7px #0A0D40, 1px 7px 20px -7px #0A0D40;
+}
+
+
+/* #401033
+#0D040A
+#0A0D40
+#A62424 */
