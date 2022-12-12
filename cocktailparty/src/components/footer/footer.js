@@ -1,9 +1,9 @@
 import React from "react";
 import "./style.css";
-import logo from "../../images/logo-api.png";
-import image from "../../images/1001cocktails.png";
-import image1 from "../../images/facebook-cocktail.png";
-import image2 from "../../images/verreBallon.png";
+import logo from "../../images/logos/logo-api.png";
+import image from "../../images/logos/1001cocktails.png";
+import image1 from "../../images/logos/facebook-cocktail.png";
+import image2 from "../../images/logos/verreBallon.png";
 
 const Footer = () => {
   return (

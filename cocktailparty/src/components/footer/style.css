@@ -4,15 +4,23 @@
     box-shadow: 1px -6px 10px -3px #A62424;
     border-radius: 5px;
     color: white;
-    margin-top: 10rem;
+    
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
+    font-size: 0.8em;
 }
 .logo{
-    width: 100px;
-    height: 100px;
+
+    width: 130px;
+    height: 130px;
+    padding: 1rem;
+}
+.footer h4{
+
+    width: 90px;
+    height: 90px;
+
     padding: 1rem;
 }
 
