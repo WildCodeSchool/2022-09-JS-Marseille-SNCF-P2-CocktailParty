@@ -1,12 +1,194 @@
 import React from "react";
-import Navbar from "../components/header/Navbar";
+import Header from "../components/header/Header";
+import { Link } from "react-router-dom";
+import Footer from "../components/footer/Footer";
+import "./materiel.css";
+import complet from "../images/materiel-img/complet.jpg";
+import concasseurGlace from "../images/materiel-img/concasseurGlace.webp";
+import cuillereMelange from "../images/materiel-img/cuillereMelange.jpg";
+import doseurAlcool from "../images/materiel-img/doseurAlcool.jpg";
+import mixeur from "../images/materiel-img/mixeur.jpg";
+import passoire from "../images/materiel-img/passoire.jpg";
+import pilon from "../images/materiel-img/pilon.jpg";
+import shaker from "../images/materiel-img/shaker.jpg";
+import VerreDoseur from "../images/materiel-img/VerreDoseur.jpg";
+import VerreMelangeur from "../images/materiel-img/VerreMelangeur.jpg";
+import VerresCocktails from "../images/materiel-img/VerresCocktails.jpg";
 
 function Materiel() {
   return (
-    <div className="Materiel">
-      <h1>Matériel Utile</h1>
+    <div className="mat_container">
       <div className="nav-header">
-      <Navbar />
+        <Header />
+      </div>
+      <div className="container">
+        <div className="head">
+          <div className="completImg">
+            <img src={complet} alt="Image de matériel à cocktail" width="80%" />
+          </div>
+          <h2 className="titleMateriel">Ustensiles du Barman</h2>
+          <p className="textUses">
+            Boire un cocktail en soirée est devenu incontournable. Pour les
+            fêtes entres amis c'est la même chose. On adore l'originalité et la
+            beauté des cocktails alors on redouble d'imagination pour proposer à
+            son entourage des boissons aussi extravagantes que délicieuses. Pour
+            être à la hauteur des barmen, il faut déjà avoir le bon matériel.
+            Mais alors, c'est quoi le must have du barman ? Pour être un bon
+            barman, il n'est pas nécessaire d'avoir l'équipement au complet.
+            Avec les ustensiles de base et quelques ingrédients de qualité, tout
+            le monde peut réaliser ses propres cocktails. Après, la pratique
+            fera tout !
+          </p>
+        </div>
+        <div className="uses">
+          <div className="tool">
+            <div class="tool_name">
+              <h3 className="titletool">Shaker</h3>
+              <img className="shaker" src={shaker} alt="image de shaker" />
+            </div>
+            <p>
+              Le shaker est l'ustensile de base du barman. Il permet de mélanger
+              tous les ingrédients et de servir les cocktails. Il permet
+              également de frimer : prenez-vous pour un mixilogiste.
+            </p>
+          </div>
+          <div className="tool">
+            <div class="tool_name">
+              <h3 className="titletool">Verre à mélange</h3>
+              <img
+                className="VerreMelangeur"
+                src={VerreMelangeur}
+                alt="image de verre à mélange"
+              />
+            </div>
+            <p>
+              Il permet de préparer les cocktails qui ne doivent pas être
+              secoués. Il est souvent gradué et peut parfois constituer la
+              partie inférieure du shaker.
+            </p>
+          </div>
+          <div className="tool">
+            <div class="tool_name">
+              <h3 className="titletool">Cuillère à mélange</h3>
+              <img
+                className="cuillereMelange"
+                src={cuillereMelange}
+                alt="image de cuillère à mélange"
+              />
+            </div>
+            <p>
+              Cette cuillère dispose d'un long manche pour pouvoir atteindre le
+              fond du verre et bien mélanger tous les ingrédients. Plus aucun
+              risque de s'en mettre plein les doigts !
+            </p>
+          </div>
+          <div className="tool">
+            <div class="tool_name">
+              <h3 className="titletool">Passoire à coctails</h3>
+              <img
+                className="passoire"
+                src={passoire}
+                alt="image de passoire à cocktail"
+              />
+            </div>
+            <p>
+              Ce petit ustensile très pratique permet d'empêcher les glaçons ou
+              les morceaux de fruits de tomber dans le verre.
+            </p>
+          </div>
+          <div className="tool">
+            <div class="tool_name">
+              <h3 className="titletool">Doseur à alcool</h3>
+              <img
+                className="doseurAlcool"
+                src={doseurAlcool}
+                alt="image de doseur à alcool"
+              />
+            </div>
+            <p>
+              Oui vous pourriez doser votre alcool à l'oeil comme un vrai barman
+              mais avant de devenir un pro, le doseur s'impose! Il permet
+              d'ajouter la juste mesure d'alcool à ses cocktails.
+            </p>
+          </div>
+          <div className="tool">
+            <div class="tool_name">
+              <h3 className="titletool">Pilon</h3>
+              <img className="pilon" src={pilon} alt="image de pilon" />
+            </div>
+            <p>
+              C'est l'accessoire indispensable pour les fans de mojitos. Il sert
+              à broyer les feuilles de menthe ou le citron.
+            </p>
+          </div>
+          <div className="tool_mixeur">
+            <div class="tool_name">
+              <h3 className="titletool">Mixeur</h3>
+              <img className="mixeur" src={mixeur} alt="image de mixeur" />
+            </div>
+            <p>
+              Le mixeur est idéal pour préparer des cocktails mousseux et mixer
+              ses ingrédients tous ensemble.
+            </p>
+          </div>
+          <div className="tool">
+            <div class="tool_name">
+              <h3 className="titletool">Verre doseur</h3>
+              <img
+                className="VerreDoseur"
+                src={VerreDoseur}
+                alt="image de verre doseur"
+              />
+            </div>
+            <p>
+              Ce petit bouchon dispose d'un bec qui permet à l'alcool de
+              s'écouler lentement dans le verre.
+            </p>
+          </div>
+          <div className="toolconcasseur">
+            <div class="tool_name">
+              <h3 className="titletool">Concasseur de glace</h3>
+              <img
+                className="concasseurGlace"
+                src={concasseurGlace}
+                alt="image de concasseur de glace"
+              />
+            </div>
+            <p>
+              Cet équipement est très pratique mais n'est pas vraiment
+              indispensable. Pour réaliser des mojitos par exemple, on peut
+              facilement broyer la glace manuellement.
+            </p>
+          </div>
+          <div className="toolVerre">
+            <div class="tool_name_verre">
+              <h3 className="titletool_verre">Verres à cocktail</h3>
+            </div>
+
+            <p className="Verre">
+              Evidemment, sans verre, pas de cocktail. Quand on est débutant, il
+              n'est pas nécessaire de se lancer dans l'achat de toute la
+              panoplie de verres à cocktails . Le tumbler est le plus
+              passe-partout. Après, à vous de voir quels cocktails vous réalisez
+              le plus souvent pour décider quels sont les verres dont vous avez
+              le plus besoin.
+            </p>
+            <Link to="/verre" className="link">
+              Verres à cocktail
+            </Link>
+          </div>
+          <div>
+            <img
+              className="ImgCocktails"
+              src={VerresCocktails}
+              alt="image de verre"
+              width="80%"
+            />
+          </div>
+        </div>
+      </div>
+      <div>
+        <Footer />
       </div>
     </div>
   );
