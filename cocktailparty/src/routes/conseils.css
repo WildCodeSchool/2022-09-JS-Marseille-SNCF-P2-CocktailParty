@@ -1,7 +1,7 @@
 .Title_art {
     padding-top: 10%;
     /* color: rgb(177, 3, 67); */
-    font-size: 3.5rem;
+    font-size: 3.3rem;
    font-family: 'Courgette', cursive;
     text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
 
@@ -64,7 +64,7 @@
 
 }
 
-h2 {
+.titre2 {
     text-decoration: underline;
     text-underline-offset: 8px;
     font-family: "Alex Brush";
@@ -74,14 +74,11 @@ h2 {
 }
 
 
-.paraph {
+.parapher {
     padding: 2%;
     text-align: center;
-    font-size: 2rem;
-
-   
+    font-size: 1.5rem;   
     padding-top: 3%;
-
     font-family: 'Courgette', cursive;
 
 

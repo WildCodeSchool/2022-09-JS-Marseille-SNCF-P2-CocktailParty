@@ -22,9 +22,9 @@ function Materiel() {
         <Header />
       </div>
       <div className="container">
-        <div className="head">
+        <div className="first">
           <div className="completImg">
-            <img src={complet} alt="Image de matériel à cocktail" width="80%" />
+            <img src={complet} alt="matériel-à-cocktail" width="80%" />
           </div>
           <h2 className="titleMateriel">Ustensiles du Barman</h2>
           <p className="textUses">
@@ -44,9 +44,9 @@ function Materiel() {
           <div className="tool">
             <div class="tool_name">
               <h3 className="titletool">Shaker</h3>
-              <img className="shaker" src={shaker} alt="image de shaker" />
+              <img className="shaker" src={shaker} alt="Shaker" />
             </div>
-            <p>
+            <p className="paraph">
               Le shaker est l'ustensile de base du barman. Il permet de mélanger
               tous les ingrédients et de servir les cocktails. Il permet
               également de frimer : prenez-vous pour un mixilogiste.
@@ -58,10 +58,10 @@ function Materiel() {
               <img
                 className="VerreMelangeur"
                 src={VerreMelangeur}
-                alt="image de verre à mélange"
+                alt="Verre à mélange"
               />
             </div>
-            <p>
+            <p className="paraph">
               Il permet de préparer les cocktails qui ne doivent pas être
               secoués. Il est souvent gradué et peut parfois constituer la
               partie inférieure du shaker.
@@ -73,10 +73,10 @@ function Materiel() {
               <img
                 className="cuillereMelange"
                 src={cuillereMelange}
-                alt="image de cuillère à mélange"
+                alt="Cuillère à mélange"
               />
             </div>
-            <p>
+            <p className="paraph">
               Cette cuillère dispose d'un long manche pour pouvoir atteindre le
               fond du verre et bien mélanger tous les ingrédients. Plus aucun
               risque de s'en mettre plein les doigts !
@@ -88,10 +88,10 @@ function Materiel() {
               <img
                 className="passoire"
                 src={passoire}
-                alt="image de passoire à cocktail"
+                alt="Passoire à cocktail"
               />
             </div>
-            <p>
+            <p className="paraph">
               Ce petit ustensile très pratique permet d'empêcher les glaçons ou
               les morceaux de fruits de tomber dans le verre.
             </p>
@@ -102,10 +102,10 @@ function Materiel() {
               <img
                 className="doseurAlcool"
                 src={doseurAlcool}
-                alt="image de doseur à alcool"
+                alt="Doseur à alcool"
               />
             </div>
-            <p>
+            <p className="paraph">
               Oui vous pourriez doser votre alcool à l'oeil comme un vrai barman
               mais avant de devenir un pro, le doseur s'impose! Il permet
               d'ajouter la juste mesure d'alcool à ses cocktails.
@@ -114,9 +114,9 @@ function Materiel() {
           <div className="tool">
             <div class="tool_name">
               <h3 className="titletool">Pilon</h3>
-              <img className="pilon" src={pilon} alt="image de pilon" />
+              <img className="pilon" src={pilon} alt="Pilon" />
             </div>
-            <p>
+            <p className="paraph">
               C'est l'accessoire indispensable pour les fans de mojitos. Il sert
               à broyer les feuilles de menthe ou le citron.
             </p>
@@ -124,9 +124,9 @@ function Materiel() {
           <div className="tool_mixeur">
             <div class="tool_name">
               <h3 className="titletool">Mixeur</h3>
-              <img className="mixeur" src={mixeur} alt="image de mixeur" />
+              <img className="mixeur" src={mixeur} alt="Mixeur" />
             </div>
-            <p>
+            <p className="paraph">
               Le mixeur est idéal pour préparer des cocktails mousseux et mixer
               ses ingrédients tous ensemble.
             </p>
@@ -137,10 +137,10 @@ function Materiel() {
               <img
                 className="VerreDoseur"
                 src={VerreDoseur}
-                alt="image de verre doseur"
+                alt="Verre doseur"
               />
             </div>
-            <p>
+            <p className="paraph">
               Ce petit bouchon dispose d'un bec qui permet à l'alcool de
               s'écouler lentement dans le verre.
             </p>
@@ -151,10 +151,10 @@ function Materiel() {
               <img
                 className="concasseurGlace"
                 src={concasseurGlace}
-                alt="image de concasseur de glace"
+                alt="Concasseur de glace"
               />
             </div>
-            <p>
+            <p className="paraph">
               Cet équipement est très pratique mais n'est pas vraiment
               indispensable. Pour réaliser des mojitos par exemple, on peut
               facilement broyer la glace manuellement.
@@ -181,15 +181,15 @@ function Materiel() {
             <img
               className="ImgCocktails"
               src={VerresCocktails}
-              alt="image de verre"
+              alt="Verre"
               width="80%"
             />
           </div>
         </div>
       </div>
-      <div>
-        <Footer />
-      </div>
+      
+        <Footer/>
+     
     </div>
   );
 }

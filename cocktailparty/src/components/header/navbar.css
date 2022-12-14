@@ -1,8 +1,8 @@
-* {
+/* * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-}
+} */
 
 .home,
 .verre,
@@ -30,7 +30,7 @@
   margin-right: 2rem;
   font-size: 3rem;
   background: none;
-  color: #a62139;
+  color: white;
   margin-left: 4vh;
 }
 
@@ -82,7 +82,7 @@
 }
 
 .navbar-toggle {
-  background-color: #401033;
+  /* background-color: #401033; */
   width: 100%;
   height: 80px;
   display: flex;

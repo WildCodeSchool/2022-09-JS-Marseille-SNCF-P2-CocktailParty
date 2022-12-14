@@ -4,7 +4,7 @@
 }
 
 
-.head {
+.first {
   padding: 5%;
 
 }
@@ -12,13 +12,16 @@
 .titleMateriel {
   color: rgb(161, 116, 61);
   font-size: 5rem;
-}
-
-h2 {
   padding-top: 3%;
   padding-bottom: 3%;
   font-size: 3.5rem;
 }
+
+/* h2  {
+  padding-top: 3%;
+  padding-bottom: 3%;
+  font-size: 3.5rem;
+} */
 
 .completImg {
   background-image: linear-gradient(aliceblue, rgba(9, 0, 0, 0.896));
@@ -76,7 +79,7 @@ h2 {
   text-shadow: 1px 1px 2px rgb(161, 116, 61);
 }
 
-p {
+.paraph {
   width: 50%;
   font-weight: 600;
 

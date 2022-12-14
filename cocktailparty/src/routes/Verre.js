@@ -10,6 +10,7 @@ import image5 from "../images/verres-img/tulipeHurricane.jpg";
 
 function Verre() {
   return (
+    <div>
     <div className="Verre">
       <div className="nav-header">
         <Header />
@@ -103,9 +104,10 @@ function Verre() {
           </p>
         </div>
       </div>
-
+      </div>
       <Footer />
     </div>
+
   );
 }
 

@@ -32,8 +32,8 @@ function Conseils() {
               <img className="img_1" src={Img1} alt="cocktails" />
             </div>
             <div className="text">
-              <h2>1. Commencez par les cocktails classiques</h2>
-              <p className="paraph">
+              <h2 className="titre2">1. Commencez par les cocktails classiques</h2>
+              <p className="parapher">
                 Quand vous ne savez pas comment faire des cocktails ? Commencez
                 toujours par maîtriser les recettes de cocktails classiques au
                 lieu d’expérimenter. Au début, expérimenter est une bonne idée
@@ -49,11 +49,11 @@ function Conseils() {
               <img className="img_2" src={Img2} alt="cocktails" />
             </div>
             <div className="text">
-              <h2>
+              <h2 className="titre2">
                 2. L’alcool est un ingrédient important dans la fabrication de
                 cocktails
               </h2>
-              <p className="paraph">
+              <p className="parapher">
                 Il ne fait aucun doute qu’un bon cocktail ne doit pas masquer
                 son ivresse. Cette règle d’or : la base de 50 ml du cocktail est
                 un spiritueux comprenant également quelques autres ingrédients.
@@ -67,10 +67,10 @@ function Conseils() {
               <img className="img_3" src={Img3} alt="cocktails" />
             </div>
             <div className="text">
-              <h2>
+              <h2 className="titre2">
                 3. La glace est un composant essentiel pour faire des cocktails
               </h2>
-              <p className="paraph">
+              <p className="parapher">
                 La glace est l’élément le plus ignoré et négligé dans la
                 fabrication de cocktails, ne sous-estimez pas cet ingrédient. La
                 glace a un double objectif pour votre boisson, refroidir le
@@ -89,11 +89,11 @@ function Conseils() {
               <img className="img_4" src={Img4} alt="cocktails" />
             </div>
             <div className="text">
-              <h2>
+              <h2 className="titre2">
                 4. Pour parfaire l’art de la confection de cocktails, il est
                 essentiel de connaître ses ingrédients
               </h2>
-              <p className="paraph">
+              <p className="parapher">
                 Nous sommes tous conscients que la préparation de cocktails ne
                 consiste pas seulement à mélanger un ou deux spiritueux avec des
                 ingrédients aromatisés. La meilleure façon de faire des
@@ -112,11 +112,11 @@ function Conseils() {
               <img className="img_5" src={Img5} alt="cocktails" />
             </div>
             <div className="text">
-              <h2>
+              <h2 className="titre2">
                 5. N’improvisez pas, lisez attentivement les recettes de
                 cocktails !
               </h2>
-              <p className="paraph">
+              <p className="parapher">
                 Comment faire des cocktails ? Internet et de nombreux livres
                 regorgent de boissons et de recettes de cocktails, donc ne
                 suivez pas votre sixième sens si vous n’êtes pas un expert. La
@@ -134,8 +134,8 @@ function Conseils() {
               <img className="img_6" src={Img6} alt="cocktails" />
             </div>
             <div className="text">
-              <h2>6. Un bon cocktail est toujours équilibré.</h2>
-              <p className="paraph">
+              <h2 className="titre2">6. Un bon cocktail est toujours équilibré.</h2>
+              <p className="parapher">
                 Visez un mélange de saveurs bien équilibré, ni trop sucré ni
                 trop acide et pas trop amer non plus. C’est facile de faire un
                 cocktail qui est bon à la première gorgée, de plus, le défi est
@@ -151,8 +151,8 @@ function Conseils() {
               <img className="img_7" src={Img7} alt="cocktails" />
             </div>
             <div className="text">
-              <h2>7. Tout est dans la présentation</h2>
-              <p className="paraph">
+              <h2 className="titre2">7. Tout est dans la présentation</h2>
+              <p className="parapher">
                 Ne vous précipitez pas en installant la boisson sur la table,
                 prenez le temps et soyez patient. Vous n’avez pas besoin d’être
                 obsessionnel à ce sujet mais la présentation créative joue un
@@ -167,11 +167,11 @@ function Conseils() {
               <img className="img_8" src={Img8} alt="cocktails" />
             </div>
             <div className="text">
-              <h2>
+              <h2 className="titre2">
                 8. Mélanger ou secouer une technique importante de préparation
                 de cocktails
               </h2>
-              <p className="paraph">
+              <p className="parapher">
                 Quand mélanger ? Quand secouer ? Cette technique de fabrication
                 de cocktails est simple mais obligatoire. Il existe deux types
                 de base de cocktails, les cocktails aromatiques qui ne
@@ -192,8 +192,8 @@ function Conseils() {
               <img className="img_9" src={Img9} alt="cocktails" />
             </div>
             <div className="text">
-              <h2>9. Chaque élément compte</h2>
-              <p className="paraph">
+              <h2 className="titre2">9. Chaque élément compte</h2>
+              <p className="parapher">
                 Chaque élément que vous ajoutez à la boisson fait la différence,
                 David A Embury, auteur du livre The Fine Art of Mixing Drinks,
                 affirme qu’aucune boisson n’était meilleure que ses pires
@@ -211,8 +211,8 @@ function Conseils() {
               <img className="img_10" src={Img10} alt="cocktails" />
             </div>
             <div className="text">
-              <h2>10. Avoir le bon matériel</h2>
-              <p className="paraph">
+              <h2 className="titre2">10. Avoir le bon matériel</h2>
+              <p className="parapher">
                 Chaque type de cocktail nécessite un type de shaker différent,
                 toutes les utilisations de shaker ne peuvent pas faire une bonne
                 boisson. Le barman et les mixologues doivent passer beaucoup de
