@@ -3,7 +3,16 @@ import React, { useState } from "react";
 import axios from "axios";
 import CocktailList from "../CocktailList/CocktailList";
 
-function SearchBar() {
+function SearchBar(name,
+  glass,
+  picture,
+  ingredient,
+  ingredient2,
+  ingredient3,
+  ingredient4,
+  info,
+  recette,
+  video) {
   const [query, setQuery] = useState("");
   const [drinks, setDrinks] = useState([]);
 
@@ -37,7 +46,7 @@ function SearchBar() {
             id="search"
             name="searchValue"
             onChange={onChange}
-            placeholder="ingredients"
+            placeholder="taper votre recherche"
             type="text"
             value={query}
             required
@@ -48,23 +57,23 @@ function SearchBar() {
           </div>
         </form>
         <button className="btn" onClick={onSubmit}>
-          Search
+          Recherche
         </button>
-        
-        </div>
-		<div className="cocktail-list">
-          {drinks !== [] &&
-            drinks.map((drink) => (
-              <CocktailList
-                key={drink.idDrink}
-                name={drink.strDrink}
-                picture={drink.strDrinkThumb}
-                ingredient={drink.strIngredient1}
-ingredient2={drink.strIngredient2}
-ingredient3={drink.strIngredient3}
-ingredient4={drink.strIngredient4}
-              />
-            ))}
+      </div>
+      <div className="cocktail-list">
+        {drinks !== [] &&
+          drinks.map((drink) => (
+            <CocktailList
+              key={drink.idDrink}
+              name={drink.strDrink}
+              picture={drink.strDrinkThumb}
+              ingredient={drink.strIngredient1}
+              ingredient2={drink.strIngredient2}
+              ingredient3={drink.strIngredient3}
+              ingredient4={drink.strIngredient4}
+              recette={drink.strInstructions}
+            />
+          ))}
       </div>
     </>
   );

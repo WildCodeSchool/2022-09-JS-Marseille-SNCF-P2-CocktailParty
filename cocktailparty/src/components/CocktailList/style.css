@@ -12,15 +12,11 @@
     rgb(38, 24, 195)
   );
   color: white;
-  margin: 1rem;
+  margin: 1vw;
 margin-top: 5rem;
-
 }
 
-.cocktaillist img{
-  width: 100%;
-  height: 100%;
-}
+
 
 .cocktail-footer {
   padding: 1.5rem;
