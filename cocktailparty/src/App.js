@@ -36,7 +36,7 @@ function App() {
 
   const getDrink = () => {
     axios
-      .get("https://www.thecocktaildb.com/api/json/v1/1/search.php?s=margarita")
+      .get("www.thecocktaildb.com/api/json/v1/1/random.php")
 
       .then((response) => response.data)
 
