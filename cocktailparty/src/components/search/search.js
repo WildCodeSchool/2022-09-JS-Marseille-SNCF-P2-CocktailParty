@@ -1,16 +1,43 @@
 import "./style.css";
+import React, { useState, useEffect } from "react";
+import axios from "axios";
+import CocktailCard from "../CocktailCard/CocktailCard";
 
-function SearchBar(props) {
+const url = 'https://www.thecocktaildb.com/api/json/v1/1/search.php?s=';
+
+
+function SearchBar() {
+const [datas, setDatas] = useState([]);
+const [searchTerm, setSearchTerm] = useState("");
+
+useEffect(() => {
+axios
+.get(`${url}${searchTerm}`)
+.then((response) => response.data)
+.then((data) => {
+  setDatas(data);
+  console.log(data, "super data");
+});
+},[]);
+
+const handleSearchTerm = (e) => {
+  let value = e.target.value;
+  value.length > 2 && setSearchTerm(value);
+};
+
+console.log(searchTerm, "search terme");
 
   return (
+    <>
     <div className="searchbar">
       <form className="form">
         <input
           className="enter"
           type="text"
-          id="header-search"
+          id="searchBar"
           placeholder="Votre cocktail ou ingrédient.."
-          name="q"
+            name="searchBar"
+            onChange={handleSearchTerm}
         />
         {
           <div className="loop">
@@ -18,7 +45,23 @@ function SearchBar(props) {
           </div>
         }
       </form>
-    </div>
+      
+        <div className="search_results">
+          
+          {datas?.drinks?.filter((val) => {
+            return val.toLowerCase().includes(searchTerm.toLowerCase());
+            console.log(datas.drinks, "potatoes");
+          })}
+          
+            
+        
+             
+                
+              </div>           
+        
+      </div>
+     
+  </>
   );
 }
 export default SearchBar;
