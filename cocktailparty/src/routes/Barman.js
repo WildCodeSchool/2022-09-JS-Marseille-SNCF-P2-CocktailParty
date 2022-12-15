@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import Header from "../components/header/Header";
 import image from "../images/barman-img/barman.jpg";
 import "./barman.css";
@@ -26,14 +26,9 @@ const drinksInitial = [
     strInstructions:
       "Rub the rim of the glass with the lime slice to make the salt stick to it. Take care to moisten only the outer rim and sprinkle the salt on it. The salt should present to the lips of the imbiber and never mix into the cocktail. Shake the other ingredients with ice, then carefully pour into the glass.",
   },
-  
 ];
 
-
-
-
 function Barman() {
-
   const [drinkState, setDrinkState] = useState(drinksInitial);
 
   const getDrink = () => {
@@ -48,9 +43,6 @@ function Barman() {
       });
   };
   console.log(drinkState.drinks, "appel drink");
-
-
-
 
   return (
     <div className="Barman">
@@ -68,10 +60,10 @@ function Barman() {
         </div>
       </div>
       <button className="btn" type="button" onClick={getDrink}>
-          Recherche
-        </button>
+        Recherche
+      </button>
 
-        <div className="cocktailCard">
+      <div className="cocktailCard">
         {drinkState.map((drink, index) => (
           <CocktailCard
             key={index}
@@ -86,7 +78,7 @@ function Barman() {
             video={drink.strVideo}
           />
         ))}
-</div>
+      </div>
       <Footer />
     </div>
   );

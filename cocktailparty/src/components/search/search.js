@@ -3,65 +3,76 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 
 
-const url = 'https://www.thecocktaildb.com/api/json/v1/1/search.php?s=';
-
+import CocktailCard from "../CocktailCard/CocktailCard";
 
 function SearchBar() {
-const [datas, setDatas] = useState([]);
-const [searchTerm, setSearchTerm] = useState("");
+  const [query, setQuery] = useState('');
+	const [drinks, setDrinks] = useState([]);
 
-useEffect(() => {
-axios
-.get(`${url}${searchTerm}`)
-.then((response) => response.data)
-.then((data) => {
-  setDatas(data);
-  console.log(data, "super data");
-});
-},[]);
+	const url = `https://www.thecocktaildb.com/api/json/v1/1/search.php?s=${query}`;
 
-const handleSearchTerm = (e) => {
-  let value = e.target.value;
-  value.length > 2 && setSearchTerm(value);
-};
+	const searchDrinks = async () => {
+		try {
+			const response = await axios.get(url);
+			console.log(response);
+			setDrinks(response.data.drinks);
+			setQuery('');
+		} catch (e) {
+			
+			console.error(e);
+		}
+	};
 
-console.log(searchTerm, "search terme");
+	const onChange = (e) => setQuery(e.target.value);
+
+	const onSubmit = (e) => {
+		
+		e.preventDefault();
+
+		searchDrinks();
+	
+	};
 
   return (
     <>
-    <div className="searchbar">
-      <form className="form">
-        <input
-          className="enter"
-          type="text"
-          id="searchBar"
-          placeholder="Votre cocktail ou ingrédient.."
-            name="searchBar"
-            onChange={handleSearchTerm}
-        />
-        {
-          <div className="loop">
+      <div className="searchbar">
+      <form className='form' onSubmit={onSubmit}>
+						
+							<input className="enter"
+								id='search'
+								name='searchValue'
+								onChange={onChange}
+								placeholder='ingredients'
+								type='text'
+								value={query}
+								required
+							></input>
+							
+					<div className="loop">
             <i className="fa-solid fa-magnifying-glass"></i>
           </div>
-        }
-      </form>
-      
-        <div className="search_results">
-          
-          {/* {datas?.drinks?.filter((val) => {
-            return val.toLowerCase().includes(searchTerm.toLowerCase());
-            console.log(datas.drinks, "potatoes");
-          })} */}
-          
             
-        
-             
-                
-              </div>           
-        
+					</form>
+          <button className="btn" onClick={onSubmit}>Search</button>
+          <div >
+						{drinks !== [] &&
+							drinks.map((drink) => (
+								<CocktailCard  key={drink.idDrink}
+                name={drink.strDrink}
+                glass={drink.strGlass}
+                picture={drink.strDrinkThumb}
+                ingredient={drink.strIngredient1}
+                ingredient2={drink.strIngredient2}
+                ingredient3={drink.strIngredient3}
+                ingredient4={drink.strIngredient4}
+                recette={drink.strInstructions}
+                video={drink.strVideo} />
+							))}
+					</div>
+
+        <div className="search_results"></div>
       </div>
-     
-  </>
+    </>
   );
 }
 export default SearchBar;
