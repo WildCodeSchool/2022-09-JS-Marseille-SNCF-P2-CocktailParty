@@ -59,6 +59,10 @@ function SearchBar() {
                 key={drink.idDrink}
                 name={drink.strDrink}
                 picture={drink.strDrinkThumb}
+                ingredient={drink.strIngredient1}
+ingredient2={drink.strIngredient2}
+ingredient3={drink.strIngredient3}
+ingredient4={drink.strIngredient4}
               />
             ))}
       </div>
