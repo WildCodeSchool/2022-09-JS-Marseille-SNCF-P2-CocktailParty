@@ -4,7 +4,7 @@ import image from "../images/barman-img/barman.jpg";
 import "./barman.css";
 import Footer from "../components/footer/Footer";
 import axios from "axios";
-import CocktailCard from "../components/CocktailCard/CocktailCard";
+import CocktailList from "../components/CocktailList/CocktailList";
 
 const drinksInitial = [
   {
@@ -65,7 +65,7 @@ function Barman() {
 
       <div className="cocktailCard">
         {drinkState.map((drink, index) => (
-          <CocktailCard
+          <CocktailList
             key={index}
             name={drink.strDrink}
             glass={drink.strGlass}
