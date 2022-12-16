@@ -46,7 +46,7 @@ function SearchBar(name,
             id="search"
             name="searchValue"
             onChange={onChange}
-            placeholder="taper votre recherche"
+            placeholder="tapez votre recherche"
             type="text"
             value={query}
             required
@@ -61,8 +61,12 @@ function SearchBar(name,
         </button>
       </div>
       <div className="cocktail-list">
-        {drinks !== [] &&
-          drinks.map((drink) => (
+        {!drinks ? (
+          <h1 className="drunk">
+          Go home, you're drunk. We can't serve you.
+        </h1>
+        ) : (
+          drinks.map(drink => (
             <CocktailList
               key={drink.idDrink}
               name={drink.strDrink}
@@ -73,7 +77,7 @@ function SearchBar(name,
               ingredient4={drink.strIngredient4}
               recette={drink.strInstructions}
             />
-          ))}
+          )))}
       </div>
     </>
   );
