@@ -1,23 +1,16 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Dancing+Script&family=Pacifico&family=Satisfy&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Courgette&family=Dancing+Script&family=Pacifico&family=Satisfy&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap");
 
 * {
-
-    font-family: 'Courgette', cursive;
-
-
+  font-family: "Courgette", cursive;
 }
 
-
 body {
-
   text-align: center;
   background-image: url(./images/background/night-sunset.jpg);
   background-size: 100vw 100vh;
   background-attachment: fixed;
 }
-
 
 .cocktail-list {
   display: flex;
@@ -62,24 +55,4 @@ body {
     rgb(243, 236, 243),
     rgb(55, 101, 138)
   );
-}
-
-@media screen and (max-width: 800px) {
-  
-  .cocktail-list {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    flex-wrap: nowrap;
-    align-content: center;
-    align-items: center;
-}
-  .cocktailCard {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    flex-wrap: nowrap;
-    align-content: center;
-    align-items: center;
-  }
 }
