@@ -32,7 +32,9 @@ function Conseils() {
               <img className="img_1" src={Img1} alt="cocktails" />
             </div>
             <div className="text">
-              <h2 className="titre2">1. Commencez par les cocktails classiques</h2>
+              <h2 className="titre2">
+                1. Commencez par les cocktails classiques
+              </h2>
               <p className="parapher1">
                 Quand vous ne savez pas comment faire des cocktails ? Commencez
                 toujours par maîtriser les recettes de cocktails classiques au
@@ -134,7 +136,9 @@ function Conseils() {
               <img className="img_6" src={Img6} alt="cocktails" />
             </div>
             <div className="text">
-              <h2 className="titre2">6. Un bon cocktail est toujours équilibré.</h2>
+              <h2 className="titre2">
+                6. Un bon cocktail est toujours équilibré.
+              </h2>
               <p className="parapher">
                 Visez un mélange de saveurs bien équilibré, ni trop sucré ni
                 trop acide et pas trop amer non plus. C’est facile de faire un
