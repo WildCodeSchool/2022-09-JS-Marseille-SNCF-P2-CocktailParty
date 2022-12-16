@@ -33,7 +33,7 @@ function Conseils() {
             </div>
             <div className="text">
               <h2 className="titre2">1. Commencez par les cocktails classiques</h2>
-              <p className="parapher">
+              <p className="parapher1">
                 Quand vous ne savez pas comment faire des cocktails ? Commencez
                 toujours par maîtriser les recettes de cocktails classiques au
                 lieu d’expérimenter. Au début, expérimenter est une bonne idée

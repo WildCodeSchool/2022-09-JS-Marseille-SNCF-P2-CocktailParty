@@ -46,7 +46,7 @@ function SearchBar(name,
             id="search"
             name="searchValue"
             onChange={onChange}
-            placeholder="taper votre recherche"
+            placeholder="Recherche"
             type="text"
             value={query}
             required

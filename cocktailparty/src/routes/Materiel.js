@@ -172,10 +172,11 @@ function Materiel() {
               passe-partout. Après, à vous de voir quels cocktails vous réalisez
               le plus souvent pour décider quels sont les verres dont vous avez
               le plus besoin.
+              <br />
+              <Link to="/verre" className="link">
+                Verres à cocktail
+              </Link>
             </p>
-            <Link to="/verre" className="link">
-              Verres à cocktail
-            </Link>
           </div>
           <div>
             <img
@@ -187,9 +188,9 @@ function Materiel() {
           </div>
         </div>
       </div>
-      
-        <Footer/>
-     
+      <div className="Pied">
+        <Footer />
+      </div>
     </div>
   );
 }
