@@ -58,6 +58,6 @@ padding-right: 0.5rem;
 
   .imgVerre1, .imgVerre2, .imgVerre3, .imgVerre4, .imgVerre5{
     width: 30vw;
-    border-radius: 25% 10%;
+    border-radius: 10% 25%;
   }
 }
