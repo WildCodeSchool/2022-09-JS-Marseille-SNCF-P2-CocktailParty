@@ -6,7 +6,6 @@
   grid-template-rows: 1fr;
   border-radius: 5px;
   width: 60vw;
-  
   background-image: linear-gradient(
     to right,
     rgb(213, 118, 213),
@@ -20,7 +19,6 @@
 .cocktailcard img{
   width: 100%;
   height: 100%;
-
 }
 .cocktail-footer {
   padding: 1.5rem;
@@ -29,7 +27,7 @@
 .cocktail-footer h4,
 .cocktail-footer p {
   margin-bottom: 0.5rem;
-  font-size: 1.2vw;
+  font-size: 1.5vw;
   font-family: 'Courgette', cursive;
 }
 .cocktail-footer p {

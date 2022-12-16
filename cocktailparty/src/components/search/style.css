@@ -49,3 +49,7 @@ input:focus {
 .loop {
     padding-right: 1rem;
 }
+
+.drunk{
+    color: white;
+}
