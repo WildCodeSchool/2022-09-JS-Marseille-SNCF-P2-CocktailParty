@@ -28,6 +28,7 @@
   flex-direction: row;
   padding-right: 1rem;
   font-size: 0.8em;
+  font-family: "Courgette", cursive;
 }
 
 .lien-footer a {

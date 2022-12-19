@@ -48,7 +48,7 @@ function SearchBar() {
           </div>
         </form>
         <button className="btn" onClick={onSubmit}>
-          Recherche
+          Rechercher
         </button>
       </div>
       <div className="cocktail-list">

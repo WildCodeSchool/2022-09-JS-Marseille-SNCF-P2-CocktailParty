@@ -10,7 +10,7 @@ const Footer = () => {
     <div className="footer">
       <div className="textfooter">
         <h4>Crée par Nelly, Sandra, Geoffroy</h4>
-        <h4>L'abus d'alcool est dangeureux pour la santé!</h4>
+        <h4>L'abus d'alcool est dangereux pour la santé !</h4>
       </div>
       <div className="lien-footer">
         <div className="logo-flex">

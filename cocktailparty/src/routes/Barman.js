@@ -57,7 +57,7 @@ function Barman() {
         </div>
       </div>
       <button className="btn" type="button" onClick={getDrink}>
-        Découvrez le ici:
+        A découvrir ici :
       </button>
 
       <div className="cocktailCard">
