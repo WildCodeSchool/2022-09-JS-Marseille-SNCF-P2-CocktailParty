@@ -3,18 +3,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import CocktailList from "../CocktailList/CocktailList";
 
-function SearchBar(
-  name,
-  glass,
-  picture,
-  ingredient,
-  ingredient2,
-  ingredient3,
-  ingredient4,
-  info,
-  recette,
-  video
-) {
+function SearchBar() {
   const [query, setQuery] = useState("");
   const [drinks, setDrinks] = useState([]);
 
@@ -23,10 +12,10 @@ function SearchBar(
   const searchDrinks = async () => {
     try {
       const response = await axios.get(url);
-      console.log(response);
       setDrinks(response.data.drinks);
       setQuery("");
     } catch (e) {
+      alert("connexion au serveur perdue");
       console.error(e);
     }
   };
@@ -48,7 +37,7 @@ function SearchBar(
             id="search"
             name="searchValue"
             onChange={onChange}
-            placeholder="Recherche"
+            placeholder="Votre cocktail, ingrédient..."
             type="text"
             value={query}
             required
@@ -64,7 +53,7 @@ function SearchBar(
       </div>
       <div className="cocktail-list">
         {!drinks ? (
-          <h1 className="drunk">Go home, you're drunk. We can't serve you.</h1>
+          <h1 className="drunk">Allez vous coucher, vous avez trop bu ! On ne vous sert plus.</h1>
         ) : (
           drinks.map((drink) => (
             <CocktailList

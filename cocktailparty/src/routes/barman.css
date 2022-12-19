@@ -27,10 +27,15 @@
   height: 100%;
 }
 
+.barmanfooter{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .barmanfooter h2,
-.barmanfooter h3,
-.barmanfooter p {
-  margin-top: 2vw;
+.barmanfooter h3{
   font-size: 2vw;
   text-decoration: none;
   font-family: "Courgette", cursive;
