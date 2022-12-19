@@ -139,13 +139,9 @@
   width: 10vw;
 }
 
-.Verre {
-  margin: 2% 2% 2% 2%;
-  text-align: center;
-  }
+
 
 .ImgCocktails {
-  margin: 15% 5% 5% 5%;
   border-radius: 10px;
   border-color: rgba(123, 115, 115, 0.975);
   border-style: groove;
@@ -153,4 +149,7 @@
 
 .link {
   color: yellow;
+}
+.plscocktail{
+margin-top: 10%;
 }

@@ -49,6 +49,7 @@ input:focus {
   font-style: italic;
   font-size: larger;
   font-weight: 600;
+  font-family: "Courgette", cursive;
 }
 
 .loop {
@@ -57,4 +58,5 @@ input:focus {
 
 .drunk {
   color: white;
+  font-family: "Courgette", cursive;
 }

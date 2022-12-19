@@ -22,7 +22,7 @@ function Verre() {
             taille lors d'un apéro, le verre choisi pour le servir aussi ! Il
             est un facteur clé pour améliorer l'expérience de consommation. De
             nombreux cocktails doivent même leur nom à la forme du verre dans
-            lequel ils sont servis... Voici quelques exemples incontournables!
+            lequel ils sont servis... Voici quelques exemples incontournables !
           </p>
         </div>
 
@@ -76,11 +76,11 @@ function Verre() {
             <img className="imgVerre4" src={image4} alt="Verre flute" />
           </div>
           <div className="texteVerre">
-            <h3>La flute</h3>
+            <h3>La flûte</h3>
             <p>
               Son design allongé permet de préserver les bulles et la finesse de
               la boisson qui l'emplit. Souvent utilisée pour servir du
-              champagne, la flute peut également servir à présenter des
+              champagne, la flûte peut également servir à présenter des
               cocktails à base de pétillants (tel du Prosecco).
             </p>
           </div>

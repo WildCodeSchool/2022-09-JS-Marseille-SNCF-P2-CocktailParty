@@ -48,7 +48,7 @@ function SearchBar() {
           </div>
         </form>
         <button className="btn" onClick={onSubmit}>
-          Recherche
+          Rechercher
         </button>
       </div>
       <div className="cocktail-list">
@@ -61,6 +61,7 @@ function SearchBar() {
             <CocktailList
               key={drink.idDrink}
               name={drink.strDrink}
+              glass={drink.strGlass}
               picture={drink.strDrinkThumb}
               ingredient={drink.strIngredient1}
               ingredient2={drink.strIngredient2}

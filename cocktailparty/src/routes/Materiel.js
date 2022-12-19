@@ -29,7 +29,7 @@ function Materiel() {
           <h2 className="titleMateriel">Ustensiles du Barman</h2>
           <p className="textUses">
             Boire un cocktail en soirée est devenu incontournable. Pour les
-            fêtes entres amis c'est la même chose. On adore l'originalité et la
+            fêtes entre amis c'est la même chose. On adore l'originalité et la
             beauté des cocktails alors on redouble d'imagination pour proposer à
             son entourage des boissons aussi extravagantes que délicieuses. Pour
             être à la hauteur des barmen, il faut déjà avoir le bon matériel.
@@ -49,7 +49,7 @@ function Materiel() {
             <p className="paraph">
               Le shaker est l'ustensile de base du barman. Il permet de mélanger
               tous les ingrédients et de servir les cocktails. Il permet
-              également de frimer : prenez-vous pour un mixilogiste.
+              également de frimer : prenez-vous pour un mixologue.
             </p>
           </div>
           <div className="tool">
@@ -84,7 +84,7 @@ function Materiel() {
           </div>
           <div className="tool">
             <div className="tool_name">
-              <h3 className="titletool">Passoire à coctails</h3>
+              <h3 className="titletool">Passoire à cocktails</h3>
               <img
                 className="passoire"
                 src={passoire}
@@ -178,7 +178,7 @@ function Materiel() {
               </Link>
             </p>
           </div>
-          <div>
+          <div className="plscocktail">
             <img
               className="ImgCocktails"
               src={VerresCocktails}

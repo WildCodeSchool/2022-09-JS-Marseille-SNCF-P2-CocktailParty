@@ -3,9 +3,9 @@ import "./style.css";
 
 function CocktailCard({ recette }) {
   return (
-    <>
+    <span>
       {recette}
-    </>
+    </span>
   );
 }
 
