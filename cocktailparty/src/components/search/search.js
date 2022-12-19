@@ -37,7 +37,7 @@ function SearchBar() {
             id="search"
             name="searchValue"
             onChange={onChange}
-            placeholder="Recherche"
+            placeholder="Votre cocktail, ingrédient..."
             type="text"
             value={query}
             required
