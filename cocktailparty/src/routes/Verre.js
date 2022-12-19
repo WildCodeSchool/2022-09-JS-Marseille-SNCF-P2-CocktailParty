@@ -36,7 +36,7 @@ function Verre() {
               Le tumbler est le verre le plus utilisé pour servir des cocktails.
               Long et fin, il possède des bords droits et permet de mettre
               beaucoup de glaçons dans une boisson. Il est idéal pour servir des
-              Mojito.
+              Mojitos.
             </p>
           </div>
         </div>
