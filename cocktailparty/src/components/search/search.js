@@ -53,7 +53,9 @@ function SearchBar() {
       </div>
       <div className="cocktail-list">
         {!drinks ? (
-          <h1 className="drunk">Allez vous coucher, vous avez trop bu ! On ne vous sert plus.</h1>
+          <h1 className="drunk">
+            Allez vous coucher, vous avez trop bu ! On ne vous sert plus.
+          </h1>
         ) : (
           drinks.map((drink) => (
             <CocktailList
