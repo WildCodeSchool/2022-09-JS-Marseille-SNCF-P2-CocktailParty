@@ -228,7 +228,6 @@ function Conseils() {
                 préparation de cocktails à maîtriser par les barmans et les
                 débutants tout en préparant des cocktails afin de servir la
                 meilleure boisson de la ville.
-                {/* RAJOUTER LE LIEN */}
               </p>
             </div>
           </article>
