@@ -27,6 +27,7 @@ function SearchBar(
       setDrinks(response.data.drinks);
       setQuery("");
     } catch (e) {
+      alert("connexion au serveur perdue")
       console.error(e);
     }
   };

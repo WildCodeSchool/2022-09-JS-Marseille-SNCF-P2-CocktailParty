@@ -38,11 +38,9 @@ function Barman() {
       .then((response) => response.data)
 
       .then((data) => {
-        console.log(data, "test api");
         setDrinkState(data.drinks);
       });
   };
-  console.log(drinkState.drinks, "appel drink");
 
   return (
     <div className="Barman">
@@ -55,12 +53,11 @@ function Barman() {
           <div className="barmanfooter">
             <h2>Votre barman présente :</h2>
             <h3>Le cocktail du jour</h3>
-            <p>Cliquer plus bas...</p>
           </div>
         </div>
       </div>
       <button className="btn" type="button" onClick={getDrink}>
-        Recherche
+      Découvrer le ici
       </button>
 
       <div className="cocktailCard">

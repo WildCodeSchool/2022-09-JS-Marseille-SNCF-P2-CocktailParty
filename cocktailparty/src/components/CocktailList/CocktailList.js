@@ -28,7 +28,7 @@ const CocktailList = ({
           <span>{ingredient3}</span> <span>{ingredient4}</span>
         </p>
         <p>{show && <CocktailCard recette={recette} />}</p>
-        <button onClick={() => setShow(!show)}>Détails</button>
+        <button className="btn1" onClick={() => setShow(!show)}>Détails</button>
       </div>
     </div>
   );
