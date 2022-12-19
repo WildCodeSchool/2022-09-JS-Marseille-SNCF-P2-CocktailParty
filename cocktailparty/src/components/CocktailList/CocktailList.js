@@ -12,7 +12,7 @@ const CocktailList = ({
   ingredient4,
   info,
   recette,
-  video
+  video,
 }) => {
   const [show, setShow] = useState(false);
   return (
@@ -27,13 +27,7 @@ const CocktailList = ({
           <span>{ingredient}</span> <span>{ingredient2}</span>
           <span>{ingredient3}</span> <span>{ingredient4}</span>
         </p>
-        <p>
-          {show && (
-            <CocktailCard
-            recette={recette}
-            />
-          )}
-       </p>
+        <p>{show && <CocktailCard recette={recette} />}</p>
         <button onClick={() => setShow(!show)}>Détails</button>
       </div>
     </div>

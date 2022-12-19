@@ -13,10 +13,8 @@
   );
   color: white;
   margin: 1vw;
-margin-top: 5rem;
+  margin-top: 5rem;
 }
-
-
 
 .cocktail-footer {
   padding: 1.5rem;
@@ -26,7 +24,7 @@ margin-top: 5rem;
 .cocktail-footer p {
   margin-bottom: 0.3rem;
   font-size: 1vw;
-  font-family: 'Courgette', cursive;
+  font-family: "Courgette", cursive;
 }
 .cocktail-footer p {
   margin-bottom: 0.5rem;
@@ -35,7 +33,7 @@ margin-top: 5rem;
   background-color: #0a0d40;
   color: white;
   border-radius: 5px;
- padding: 1em;
+  padding: 1em;
   text-align: center;
   border-style: none;
 }

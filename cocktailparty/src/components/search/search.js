@@ -3,7 +3,8 @@ import React, { useState } from "react";
 import axios from "axios";
 import CocktailList from "../CocktailList/CocktailList";
 
-function SearchBar(name,
+function SearchBar(
+  name,
   glass,
   picture,
   ingredient,
@@ -12,7 +13,8 @@ function SearchBar(name,
   ingredient4,
   info,
   recette,
-  video) {
+  video
+) {
   const [query, setQuery] = useState("");
   const [drinks, setDrinks] = useState([]);
 
@@ -62,11 +64,9 @@ function SearchBar(name,
       </div>
       <div className="cocktail-list">
         {!drinks ? (
-          <h1 className="drunk">
-          Go home, you're drunk. We can't serve you.
-        </h1>
+          <h1 className="drunk">Go home, you're drunk. We can't serve you.</h1>
         ) : (
-          drinks.map(drink => (
+          drinks.map((drink) => (
             <CocktailList
               key={drink.idDrink}
               name={drink.strDrink}
@@ -77,7 +77,8 @@ function SearchBar(name,
               ingredient4={drink.strIngredient4}
               recette={drink.strInstructions}
             />
-          )))}
+          ))
+        )}
       </div>
     </>
   );

@@ -16,7 +16,7 @@
   overflow: hidden;
 }
 
-.cocktailcard img{
+.cocktailcard img {
   width: 100%;
   height: 100%;
 }
@@ -28,7 +28,7 @@
 .cocktail-footer p {
   margin-bottom: 0.5rem;
   font-size: 1.5vw;
-  font-family: 'Courgette', cursive;
+  font-family: "Courgette", cursive;
 }
 .cocktail-footer p {
   margin-bottom: 0.5rem;
