@@ -10,9 +10,7 @@ const CocktailList = ({
   ingredient2,
   ingredient3,
   ingredient4,
-  info,
   recette,
-  video,
 }) => {
   const [show, setShow] = useState(false);
   return (
