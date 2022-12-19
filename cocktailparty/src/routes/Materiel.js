@@ -178,7 +178,7 @@ function Materiel() {
               </Link>
             </p>
           </div>
-          <div>
+          <div className="plscocktail">
             <img
               className="ImgCocktails"
               src={VerresCocktails}
