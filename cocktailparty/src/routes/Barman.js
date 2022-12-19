@@ -51,22 +51,13 @@ function Barman() {
         <div className="barman-container">
           <img className="imagebarman" src={image} alt="barman" />
           <div className="barmanfooter">
-<<<<<<< HEAD
-            <h2>Votre barman vous présente :</h2>
-            <h3>Le cocktail du jour</h3>            
-=======
             <h2>Votre barman présente :</h2>
-            <h3>Le cocktail du jour</h3>
->>>>>>> a8713173bab051c9cd84afe0c2cafc6b17844b69
+            <h3>Le cocktail du jour</h3>            
           </div>
         </div>
       </div>
       <button className="btn" type="button" onClick={getDrink}>
-<<<<<<< HEAD
-        
-=======
-      Découvrez le ici
->>>>>>> a8713173bab051c9cd84afe0c2cafc6b17844b69
+        Découvrez le ici:
       </button>
 
       <div className="cocktailCard">
