@@ -42,7 +42,7 @@ function Materiel() {
         </div>
         <div className="uses">
           <div className="tool">
-            <div class="tool_name">
+            <div className="tool_name">
               <h3 className="titletool">Shaker</h3>
               <img className="shaker" src={shaker} alt="Shaker" />
             </div>
@@ -53,7 +53,7 @@ function Materiel() {
             </p>
           </div>
           <div className="tool">
-            <div class="tool_name">
+            <div className="tool_name">
               <h3 className="titletool">Verre à mélange</h3>
               <img
                 className="VerreMelangeur"
@@ -68,7 +68,7 @@ function Materiel() {
             </p>
           </div>
           <div className="tool">
-            <div class="tool_name">
+            <div className="tool_name">
               <h3 className="titletool">Cuillère à mélange</h3>
               <img
                 className="cuillereMelange"
@@ -83,7 +83,7 @@ function Materiel() {
             </p>
           </div>
           <div className="tool">
-            <div class="tool_name">
+            <div className="tool_name">
               <h3 className="titletool">Passoire à coctails</h3>
               <img
                 className="passoire"
@@ -97,7 +97,7 @@ function Materiel() {
             </p>
           </div>
           <div className="tool">
-            <div class="tool_name">
+            <div className="tool_name">
               <h3 className="titletool">Doseur à alcool</h3>
               <img
                 className="doseurAlcool"
@@ -112,7 +112,7 @@ function Materiel() {
             </p>
           </div>
           <div className="tool">
-            <div class="tool_name">
+            <div className="tool_name">
               <h3 className="titletool">Pilon</h3>
               <img className="pilon" src={pilon} alt="Pilon" />
             </div>
@@ -122,7 +122,7 @@ function Materiel() {
             </p>
           </div>
           <div className="tool_mixeur">
-            <div class="tool_name">
+            <div className="tool_name">
               <h3 className="titletool">Mixeur</h3>
               <img className="mixeur" src={mixeur} alt="Mixeur" />
             </div>
@@ -132,7 +132,7 @@ function Materiel() {
             </p>
           </div>
           <div className="tool">
-            <div class="tool_name">
+            <div className="tool_name">
               <h3 className="titletool">Verre doseur</h3>
               <img
                 className="VerreDoseur"
@@ -146,7 +146,7 @@ function Materiel() {
             </p>
           </div>
           <div className="toolconcasseur">
-            <div class="tool_name">
+            <div className="tool_name">
               <h3 className="titletool">Concasseur de glace</h3>
               <img
                 className="concasseurGlace"
@@ -161,7 +161,7 @@ function Materiel() {
             </p>
           </div>
           <div className="toolVerre">
-            <div class="tool_name_verre">
+            <div className="tool_name_verre">
               <h3 className="titletool_verre">Verres à cocktail</h3>
             </div>
 
